@@ -1,5 +1,7 @@
 # Frontend Mentor - Multi-step form
 
+My first attempt at creating forms. This will be an interesting learning experience
+
 ![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
