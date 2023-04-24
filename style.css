@@ -55,6 +55,10 @@ body {
     background-color: #bfe2fd;
     color: black;
 }
+
+button:hover {
+    cursor: pointer;
+}
 /* .form1, .form2monthly, .form2yearly, .form3monthly, .form3yearly, .form4  */
 
 form {
@@ -71,10 +75,11 @@ form .heading {
     font-size: 1.7rem;
     font-weight: 700;
     padding-bottom: 15px;
+    color: #02295a;
 }
 
 form .quote {
-    color: #d6d9e6;
+    color: #9699ab;
     padding-bottom: 5px;
     line-height: 1.5;
 }
@@ -93,6 +98,7 @@ input {
     width: 100%;
     border-radius: 5px;
     border: 2px solid #d6d9e6;
+    /* color: ; */
 }
 
 
@@ -121,3 +127,11 @@ input {
     border-radius: 5px;
     border: none;
 }
+
+
+/* Positioning */
+
+.form1 {
+    left: 600px;
+}
+
