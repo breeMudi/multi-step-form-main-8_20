@@ -33,36 +33,73 @@ body {
 .steps {
     margin: auto;
     padding-top: 30px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 180px;
     display: flex;
     justify-content: space-between;
+    /* gap: 30px; */
 }
 
 .steps button {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid white;
     color: white;
     font-size: 0.8rem;
+    font-weight: 500;
 }
 
-.form1, .form2monthly, .form2yearly, .form3monthly, .form3yearly, .form4 {
+.steps button:hover {
+    background-color: #bfe2fd;
+    color: black;
+}
+/* .form1, .form2monthly, .form2yearly, .form3monthly, .form3yearly, .form4  */
+
+form {
     background-color: #ffffff;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
     top: 100px;
     border-radius: 10px;
     position: absolute;
-
     padding: 30px;
 }
 
+form .heading {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+form .quote {
+    color: #d6d9e6;
+    padding-bottom: 5px;
+    line-height: 1.5;
+}
+
+.form1 .form-input p{
+    font-size: 0.8rem;
+    color:#02295a;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+input {
+    height: 40px;
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #d6d9e6;
+}
+
+
+
 .bg-bottom {
     width: 100%;
-    height: 65px;
+    height: 70px;
     position: absolute;
     background-color: #ffffff;
     bottom: 0;
@@ -70,6 +107,17 @@ body {
 
 .back-next {
     position: absolute;
-    /* bottom: 0px; */
     text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12.5px;
+}
+.back-next button {
+    height: 45px;
+    width: 100px;
+    background-color: #02295a;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }
