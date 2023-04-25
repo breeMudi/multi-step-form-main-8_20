@@ -18,7 +18,7 @@ body {
     /* min-height: 600px; */
     width: 375px;
     background-color: #bfe2fd;
-    min-height: 670px;
+    min-height: 700px;
     position: relative;
 }
 
@@ -80,8 +80,13 @@ form .heading {
 
 form .quote {
     color: #9699ab;
-    padding-bottom: 5px;
     line-height: 1.5;
+}
+
+/* form 1 */
+
+.form1 .quote {
+    padding-bottom: 5px;
 }
 
 .form1 .form-input p{
@@ -101,7 +106,52 @@ input {
     /* color: ; */
 }
 
+/* form 2 3*/
 
+.plan {
+    border: 2px solid #d6d9e6;
+    border-radius: 5px;
+    height: 75px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.plan img {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.plan-type {
+    color: #02295a;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.plan-value {
+    color: #9699ab;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+
+.m-y-switch {
+    height: 50px;
+    margin-top: 20px;
+    background-color: #d6d9e6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form2monthly .quote, .form2yearly .quote{
+    padding-bottom: 20px;
+}
+
+/* bottom navigation keys */
 
 .bg-bottom {
     width: 100%;
