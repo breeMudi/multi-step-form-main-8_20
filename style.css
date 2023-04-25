@@ -153,7 +153,7 @@ input {
     align-items: center;
 }
 
-.form2monthly .quote, .form2yearly .quote{
+.form2monthly .quote, .form2yearly .quote, .form3monthly .quote{
     padding-bottom: 20px;
 }
 
@@ -187,7 +187,7 @@ input {
 /* Positioning */
 
 .form1 {
-    /* left: 600px; */
+    left: 600px;
 }
 
 .form2monthly{
@@ -197,4 +197,3 @@ input {
 .form2yearly{
     left: 600px;
 }
-
