@@ -199,7 +199,7 @@ input {
 /* bottom navigation keys */
 
 .bg-bottom {
-    width: 100%;
+    width: 375px;
     height: 70px;
     position: fixed;
     background-color: #ffffff;
@@ -234,5 +234,9 @@ input {
 }
 
 .form2yearly{
+    left: 600px;
+}
+
+.form3monthly {
     left: 600px;
 }
