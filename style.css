@@ -106,9 +106,9 @@ input {
     /* color: ; */
 }
 
-/* form 2 3*/
+/* form 2 */
 
-.plan {
+.plan, .add-ons {
     border: 2px solid #d6d9e6;
     border-radius: 5px;
     min-height: 75px;
@@ -142,6 +142,42 @@ input {
     margin-top: 7px;
 }
 
+/* 3 */
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d6d9e6;
+    margin-right: 15px;
+    margin-left: 5px;
+    border-radius: 4px;
+    background-image: url(assets/images/icon-checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #473dff; */
+    background-color: #ffffff;
+}
+
+.add-on {
+    color: #02295a;
+    font-weight: 700;
+}
+.add-on-explain {
+    color: #9699ab;
+    font-size: 0.8rem;
+}
+
+.adds {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-cost p{
+    color: #473dff;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
 
 .m-y-switch {
     height: 50px;
@@ -156,6 +192,9 @@ input {
 .form2monthly .quote, .form2yearly .quote, .form3monthly .quote{
     padding-bottom: 20px;
 }
+
+
+/*  */
 
 /* bottom navigation keys */
 
