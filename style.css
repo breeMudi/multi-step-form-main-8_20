@@ -194,7 +194,43 @@ input {
 }
 
 
-/*  */
+/* form 4 */
+.plan-choice, .add-on-choice, .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.your-order {
+    background-color: #bfe2fd;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.plan-choice {
+    padding-bottom: 15px;
+    border-bottom: 1px solid blue;
+}
+.choice-cost {
+    font-weight: 700;
+    color: #02295a;
+}
+
+.add-on-choice {
+    padding-top: 15px;
+}
+
+.total {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.total .grand-total {
+    color: #473dff;
+    font-weight: 700;
+}
+
+
 
 /* bottom navigation keys */
 
