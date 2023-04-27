@@ -189,7 +189,7 @@ input {
     align-items: center;
 }
 
-.form2monthly .quote, .form2yearly .quote, .form3monthly .quote{
+.form2monthly .quote, .form2yearly .quote, .form3monthly .quote, .form4monthly .quote{
     padding-bottom: 20px;
 }
 
@@ -239,4 +239,8 @@ input {
 
 .form3monthly {
     left: 600px;
+}
+#btn3 {
+    /* background-color: #bfe2fd;
+    color: black; */
 }
