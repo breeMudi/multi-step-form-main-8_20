@@ -231,6 +231,24 @@ input {
 }
 
 
+/* Thank you page 4 */
+
+.form4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.form4 .quote {
+    font-size: 0.95rem;
+}
+
+.form4 img {
+    margin: 20px;
+}
 
 /* bottom navigation keys */
 
@@ -279,4 +297,8 @@ input {
 #btn3 {
     /* background-color: #bfe2fd;
     color: black; */
+}
+
+.form4monthly {
+    left:600px;
 }
