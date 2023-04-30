@@ -15,33 +15,61 @@ body {
     position: relative;
 }
 
+/* container arrangement START */
+
 .container {
-    position: fixed;
-    top: 50%;
-    left: 50%;  
-    transform: translate(-50%, -50%);
-    min-width: 375px;
-    overflow: hidden;
-    /* max-height: 100%; */
-    /* height: 100vh; */
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .bg-top {
     width: 100%;
     min-height: 175px;
-    flex-basis: 20%;
     background-image: url(assets/images/bg-sidebar-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .content {
-    position: static;
-    min-height: 550px;
-    flex-basis: 80%;
+    min-width: 325px;
     width: 100%;
+    min-height: 400px;
 }
+
+.inner-content {
+    width: 100%;
+    min-height: 535px;
+    background-color: #bfe2fd;
+    margin: auto;
+    position: relative;
+}
+
+form {
+    position: absolute;
+    width: 90%;
+    min-height: 300px;
+    top: -75px;
+    background-color: #ffffff;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.back-next {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 12.5px 5% 12.5px 5%;
+}
+
+/* container arrangement END */
 
 .steps {
     margin: auto;
@@ -70,28 +98,7 @@ body {
     justify-content: center;
 }
 
-
-section {
-    /* min-height: 400px; */
-    min-height: 475px;
-    background-color: #bfe2fd;
-    position: absolute;
-    display: block;
-    width: 100%;
-}
-
 /* .form1, .form2monthly, .form2yearly, .form3monthly, .form3yearly, .form4  */
-
-form {
-    background-color: #ffffff;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 10px;
-    padding: 30px;
-    position: relative;
-    top: -75px;
-    margin-bottom: -75px;
-}
 
 form .heading {
     font-size: 1.7rem;
@@ -272,26 +279,6 @@ input {
 }
 
 /* bottom navigation keys */
-
-/* .bg-bottom {
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    background-color: #ffffff;
-    bottom: 0;
-} */
-
-.back-next {
-    background-color: #ffffff;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 12.5px;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 0;
-}
 .back-next button {
     height: 45px;
     width: 100px;
@@ -302,40 +289,45 @@ input {
     /* margin-top: 20px; */
 }
 
-.section1 .back {
+#section1 .back {
     visibility: hidden;
 }
 
 /* Positioning */
 
 
-.section1 {
+#section1 {
     /* left: 600px; */
-    visibility: visible;
+    display: none;
 }
 
-.section2m{
+#section2m{
     /* left: 600px; */
-    visibility: hidden;
+    display: none;
 }
 
-.section2y{
+#section2y{
     /* left: 600px; */
-    visibility: hidden;
+    display: none;
 }
 
-.section3m {
+#section3m {
     /* left: 600px; */
-    visibility: hidden;
+    display: none;
 }
 
-.section4m {
+#section4m {
     /* left:600px; */
-    visibility: hidden;
+    display: none;
 }
 
-.success {
+#success {
     
     /* left:600px; */
-    visibility: hidden;
+    /* display: none; */
+}
+
+
+@media (min-width:450px){
+    .steps p{visibility: visible;}
 }
