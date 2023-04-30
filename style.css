@@ -12,42 +12,51 @@ html, body {
 
 body {
     background-color: black;
+    position: relative;
 }
 
-main {
+.container {
     position: fixed;
     top: 50%;
     left: 50%;  
     transform: translate(-50%, -50%);
-}
-
-.container {
-    /* min-height: 600px; */
-    width: 375px;
-    background-color: #bfe2fd;
-    min-height: 80vh;
-    position: relative;  
+    min-width: 375px;
+    overflow: hidden;
+    /* max-height: 100%; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
 }
 
 .bg-top {
     width: 100%;
     min-height: 175px;
+    flex-basis: 20%;
     background-image: url(assets/images/bg-sidebar-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.content {
+    position: static;
+    min-height: 550px;
+    flex-basis: 80%;
+    width: 100%;
 }
 
 .steps {
     margin: auto;
     padding-top: 30px;
-    /* border: 2px solid green; */
     width: 180px;
     display: flex;
     justify-content: space-between;
-    /* gap: 30px; */
+    align-items: center;
 }
 
-.steps button {
+.steps p {
+    visibility: hidden;
+}
+
+.steps .step {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -56,26 +65,32 @@ main {
     color: white;
     font-size: 0.8rem;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.steps button:hover {
+
+section {
+    /* min-height: 400px; */
+    min-height: 475px;
     background-color: #bfe2fd;
-    color: black;
+    position: absolute;
+    display: block;
+    width: 100%;
 }
 
-button:hover {
-    cursor: pointer;
-}
 /* .form1, .form2monthly, .form2yearly, .form3monthly, .form3yearly, .form4  */
 
 form {
     background-color: #ffffff;
     margin-left: 15px;
     margin-right: 15px;
-    top: 100px;
     border-radius: 10px;
-    position: absolute;
     padding: 30px;
+    position: relative;
+    top: -75px;
+    margin-bottom: -75px;
 }
 
 form .heading {
@@ -110,7 +125,6 @@ input {
     width: 100%;
     border-radius: 5px;
     border: 2px solid #d6d9e6;
-    /* color: ; */
 }
 
 /* form 2 */
@@ -149,7 +163,7 @@ input {
     margin-top: 7px;
 }
 
-/* 3 */
+/* form 3 */
 .checkbox {
     width: 20px;
     height: 20px;
@@ -240,7 +254,7 @@ input {
 
 /* Thank you page 4 */
 
-.form4 {
+.thank-you {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,31 +263,34 @@ input {
     padding-bottom: 70px;
 }
 
-.form4 .quote {
+.thank-you .quote {
     font-size: 0.95rem;
 }
 
-.form4 img {
+.thank-you img {
     margin: 20px;
 }
 
 /* bottom navigation keys */
 
-.bg-bottom {
+/* .bg-bottom {
     width: 100%;
     height: 70px;
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
     bottom: 0;
-}
+} */
 
 .back-next {
-    position: absolute;
+    background-color: #ffffff;
     text-align: center;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 12.5px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
 }
 .back-next button {
     height: 45px;
@@ -282,34 +299,43 @@ input {
     color: white;
     border-radius: 5px;
     border: none;
+    /* margin-top: 20px; */
+}
+
+.section1 .back {
+    visibility: hidden;
 }
 
 /* Positioning */
 
-.form1 {
-    left: 600px;
+
+.section1 {
+    /* left: 600px; */
+    visibility: visible;
 }
 
-.form2monthly{
-    left: 600px;
+.section2m{
+    /* left: 600px; */
+    visibility: hidden;
 }
 
-.form2yearly{
-    left: 600px;
+.section2y{
+    /* left: 600px; */
+    visibility: hidden;
 }
 
-.form3monthly {
-    left: 600px;
-}
-#btn3 {
-    /* background-color: #bfe2fd;
-    color: black; */
+.section3m {
+    /* left: 600px; */
+    visibility: hidden;
 }
 
-.form4monthly {
-    left:600px;
-}
-
-.form4 {
+.section4m {
     /* left:600px; */
+    visibility: hidden;
+}
+
+.success {
+    
+    /* left:600px; */
+    visibility: hidden;
 }
