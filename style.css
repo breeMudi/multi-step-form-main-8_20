@@ -62,7 +62,6 @@ form {
     background-color: #ffffff;
     width: 100%;
     bottom: 0;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     padding: 12.5px 5% 12.5px 5%;
@@ -96,7 +95,7 @@ form {
     justify-content: center;
 }
 
-/* .form1, .form2monthly, .form2yearly, .form3monthly, .form3yearly, .form4  */
+
 form .heading {
     font-size: 1.7rem;
     font-weight: 700;
@@ -135,8 +134,8 @@ input {
 
 .plan, .add-ons {
     border: 2px solid #d6d9e6;
-    border-radius: 5px;
-    min-height: 75px;
+    border-radius: 10px;
+    min-height: 70px;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -170,12 +169,43 @@ input {
 .m-y-switch {
     height: 50px;
     margin-top: 20px;
-    background-color: #d6d9e6;
+    background-color: #f8f9fe;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #9699ab;
 }
+
+.switch-btn {
+    width: 35px;
+    height: 18px;
+    background-color: #02295a;
+    margin: 0 20px 0 20px;
+    border-radius: 20px;
+    position: relative;
+    padding: 3px 0px 2px 0px;
+}
+
+.switch-click {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;    
+    
+    margin: 0 4px 0 4px;
+}
+
+.form2m #month {
+    color: #02295a;
+}
+.form2m .switch-click {left: 0;}
+
+.form2y #year {
+    color: #02295a;
+}
+.form2y .switch-click {right: 0;}
 
 
 /* form 3 */
@@ -208,39 +238,38 @@ input {
     align-items: center;
 }
 
-.add-cost p{
+.add-cost {
     color: #473dff;
-    font-size: 0.7rem;
-    font-weight: 500;
 }
 
-.form2monthly .quote, .form2yearly .quote, .form3monthly .quote, .form4monthly .quote{
+.form2m .quote, .form2y .quote, .form3m .quote, .form3y .quote, .form4m .quote{
     padding-bottom: 20px;
 }
 
 
 /* form 4 */
-.plan-choice, .add-on-choice, .total {
+.chosen-plan, .add-on-choice, .total {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .your-order {
-    background-color: #eef5ff;
-    padding: 20px;
+    background-color: #f8f9fe;
+    padding: 10px 20px 20px 20px;
     border-radius: 10px;
+    margin: 10px 0 10px 0;
 }
 
-.plan-choice {
-    min-height: 75px;
+.chosen-plan {
+    min-height: 70px;
     padding-bottom: 15px;
     border-bottom: 1px solid #d6d9e6; 
 }
-.plan-choice-cost {
-    font-weight: 700;
+.plan-choice-cost, .plan-text, .ad-on-cost {
     color: #02295a;
 }
+.plan-choice-cost {font-size: 0.8rem;}
 
 .add-on-choice {
     padding-top: 15px;
@@ -250,14 +279,23 @@ input {
     color : #9699ab;
     font-size: 0.8rem;
 }
+
+.ad-on-cost {
+    font-size: 0.8rem;
+}
+
 .total {
     padding: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+.total .grand-total, .plan-choice-cost {
+    font-weight: 500;
 }
 
 .total .grand-total {
     color: #473dff;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #section4m .next {
@@ -298,6 +336,7 @@ input {
 .back-next .back{
     background-color: transparent;
     color: #9699ab;
+    text-align: left;
 }
 
 #section1 .back {
@@ -310,7 +349,7 @@ input {
 }
 
 #section2m {    
-    display: none;
+    /* display: none; */
 }
 
 #section2y{
@@ -321,8 +360,12 @@ input {
     display: none;
 }
 
+#section3y {
+    display: none;
+}
+
 #section4m {
-    /* display: none; */
+    display: none;
 }
 
 #success {
@@ -390,6 +433,7 @@ input {
         padding-bottom: 30px;
     }
 
+    /* plan */
     .all-plans {
         display: flex;
         gap: 20px;
@@ -408,6 +452,12 @@ input {
     .plan img {width: 40px; height: 40px;margin-bottom: 40px;}
     .m-y-switch {margin-top: 10px;}
 
+    /* ad on page */
+    .add-ons {
+        padding-right: 20px;
+    }
+
+    /* sucess page */
     .thank-you {
         margin-top: 15%;
     }
