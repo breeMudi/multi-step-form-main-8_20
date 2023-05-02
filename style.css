@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-color:#bfe2fd;
+    background-color:#eef5ff;
     position: relative;
 }
 
@@ -40,7 +40,7 @@ body {
 .inner-content {
     width: 100%;
     min-height: 535px;
-    background-color: #bfe2fd;
+    background-color: #eef5ff;
     margin: auto;
     position: relative;
 }
@@ -79,7 +79,7 @@ form {
 }
 
 .steps p {
-    visibility: hidden;
+    display: none;
 }
 
 .steps .step {
@@ -189,7 +189,6 @@ input {
     background-image: url(assets/images/icon-checkmark.svg);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-color: #473dff; */
     background-color: #ffffff;
 }
 
@@ -228,16 +227,17 @@ input {
 }
 
 .your-order {
-    background-color: #bfe2fd;
-    padding: 15px;
+    background-color: #eef5ff;
+    padding: 20px;
     border-radius: 10px;
 }
 
 .plan-choice {
+    min-height: 75px;
     padding-bottom: 15px;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #d6d9e6; 
 }
-.choice-cost {
+.plan-choice-cost {
     font-weight: 700;
     color: #02295a;
 }
@@ -246,8 +246,12 @@ input {
     padding-top: 15px;
 }
 
+.ad-on-text, .total-text {
+    color : #9699ab;
+    font-size: 0.8rem;
+}
 .total {
-    padding: 10px;
+    padding: 20px;
     padding-top: 20px;
 }
 
@@ -256,6 +260,9 @@ input {
     font-weight: 700;
 }
 
+#section4m .next {
+    background-color: #473dff;
+}
 
 /* Thank you page 4 */
 .thank-you {
@@ -279,13 +286,18 @@ input {
 .back-next button {
     height: 45px;
     width: 100px;
-    color: white;
     border-radius: 5px;
     border: none;
 }
 
 .back-next .next{
     background-color: #02295a;
+    color: #ffffff;
+}
+
+.back-next .back{
+    background-color: transparent;
+    color: #9699ab;
 }
 
 #section1 .back {
@@ -302,7 +314,7 @@ input {
 }
 
 #section2y{
-    /* display: none; */
+    display: none;
 }
 
 #section3m {
@@ -310,12 +322,10 @@ input {
 }
 
 #section4m {
-    display: none;
+    /* display: none; */
 }
 
 #success {
-    
-    /* left:600px; */
     display: none;
 }
 
@@ -337,8 +347,12 @@ input {
     }
     
     .steps p {
-        visibility: visible;
+        display: block;
     }
+
+    .step-number {color: #9699ab;font-size: 0.7rem;}
+    .step-name {color: #ffffff;font-size: 0.9rem;}
+    
     
     .container {
         flex-direction: row;  
@@ -363,7 +377,7 @@ input {
         border-radius: 10px;
         background-image: url(assets/images/bg-sidebar-desktop.svg);
         background-size: cover;
-        padding: 30px;
+        padding: 35px 30px 30px 30px;
     }
 
     .inner-content {
@@ -381,7 +395,7 @@ input {
         gap: 20px;
     }
 
-    .plan, .add-ons {
+    .plan{
         min-width: 100px;
         min-height: 150px;
         flex: 1;
@@ -393,4 +407,8 @@ input {
 
     .plan img {width: 40px; height: 40px;margin-bottom: 40px;}
     .m-y-switch {margin-top: 10px;}
+
+    .thank-you {
+        margin-top: 15%;
+    }
 }
