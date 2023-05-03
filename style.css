@@ -242,7 +242,7 @@ input {
     color: #473dff;
 }
 
-.form2m .quote, .form2y .quote, .form3m .quote, .form3y .quote, .form4m .quote{
+.form2m .quote, .form2y .quote, .form3m .quote, .form3y .quote, .form4m .quote , .form4y .quote{
     padding-bottom: 20px;
 }
 
@@ -349,7 +349,7 @@ input {
 }
 
 #section2m {    
-    /* display: none; */
+    display: none;
 }
 
 #section2y{
@@ -365,6 +365,10 @@ input {
 }
 
 #section4m {
+    /* display: none; */
+}
+
+#section4y {
     display: none;
 }
 
@@ -404,8 +408,8 @@ input {
         top: 50%;
         left: 50%;  
         transform: translate(-50%, -50%);
-        max-width: 60% ;
-        border-radius: 10px;
+        max-width: 60%;
+        border-radius: 20px;
         overflow: hidden;
 
     }
