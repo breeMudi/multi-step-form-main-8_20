@@ -4,7 +4,6 @@ const sectionList = ['section1', 'section2m', 'section3m', 'section4m', 'section
 
 
 // save all clicked of a particular type in form into variables
-// form class === form-input
 
 function reset () {
     document.querySelector('.error').textContent = ''
@@ -21,8 +20,11 @@ function inputCheck () {
         document.querySelector('#error3').textContent = 'This field is required'}
 }
 
+//create function that checks if at least 1 click was made before clicking next
+// on click....add selection...on click,,, remove selection.
 
 
+// switch month and year
 const section2m = document.querySelector('#section2m')
 const section2y = document.querySelector('#section2y')
 
@@ -61,4 +63,11 @@ addEventListener('click', (e) => {
     }
 })
 
+// your choice is associated with a numeric value....all possible choices are predetermined
+
+// submit button takes you straight to final page...... 
+
 // change step bg color
+
+
+// SET TIMEOUT AND CLEAR TIMEOUT WILL BE USEFUL IN SAVING THE VALUES CHOSEN QUICKLY
