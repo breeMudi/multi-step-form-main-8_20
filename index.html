@@ -73,16 +73,36 @@
               Please provide your name, email address, and phone number.
             </p>
             <div class="form-input">
-              <p>Name</p>
-              <input type="text" placeholder="e.g. Stephen King" required />
-              <p>Email Address</p>
+              <div class="form-label">
+                <p class="input-text">Name</p>
+                <p class="error" id="error1"></p>
+              </div>
               <input
+                id="username"
+                type="text"
+                placeholder="e.g. Stephen King"
+                required
+              />
+              <div class="form-label">
+                <p class="input-text">Email Address</p>
+                <p class="error" id="error2"></p>
+              </div>
+              <input
+                id="email"
                 type="text"
                 placeholder="e.g. stephenking@lorem.com"
                 required
               />
-              <p>Phone Number</p>
-              <input type="text" placeholder="e.g. +1 234 567 890" />
+              <div class="form-label">
+                <p class="input-text">Phone Number</p>
+                <p class="error" id="error3"></p>
+              </div>
+              <input
+                id="phone"
+                type="text"
+                placeholder="e.g. +1 234 567 890"
+                required
+              />
             </div>
           </form>
           <div class="back-next">
