@@ -114,12 +114,19 @@ form .quote {
     padding-bottom: 5px;
 }
 
-.form1 .form-input p{
+.input-text, #error1, #error2, #error3{
     font-size: 0.8rem;
-    color:#02295a;
     padding-top: 15px;
     padding-bottom: 5px;
 }
+
+.form-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-text {color:#02295a;}
+#error1, #error2, #error3{color: red;}
 
 input {
     height: 40px;
@@ -197,14 +204,10 @@ input {
     margin: 0 4px 0 4px;
 }
 
-.form2m #month {
+.form2m #month, .form2y #year {
     color: #02295a;
 }
 .form2m .switch-click {left: 0;}
-
-.form2y #year {
-    color: #02295a;
-}
 .form2y .switch-click {right: 0;}
 
 
@@ -345,7 +348,7 @@ input {
 
 /* Positioning */
 #section1 {
-    display: none;
+    display: block;
 }
 
 #section2m {    
@@ -369,7 +372,7 @@ input {
 }
 
 #section4y {
-    /* display: none; */
+    display: none;
 }
 
 #success {
