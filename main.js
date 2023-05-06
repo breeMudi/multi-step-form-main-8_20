@@ -123,6 +123,7 @@ addEventListener('click', (e) => {
 // ANSWER - On page2 there are 3 plan choices each and only one choice can be made === DONE
 //          On page3 there are 3 ad-ons and any quantity can be chosen >> SCAN THE PAGE FOR TICKED BOX
 // Page 4 only shows the choices made
+// But what is the difference between a checked and and un-checked Ad-on
 // MEANING - if he choses an option on page 2. a value should be stored upon clicking next
 // if he unclicks. the value is reset to nothing chosen. Remember, only one can be chosen at a time..therefore, older choices are popped.
 // better-still. once one is clicked. it cannot be undone, else you go back to previous page
