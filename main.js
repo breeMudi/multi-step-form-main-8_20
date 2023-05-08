@@ -2,6 +2,7 @@ const innerContent = document.querySelectorAll('.inner-content')
 const nextBtn = document.querySelector('.next')
 const sectionList = ['section1', 'section2m', 'section3m', 'section4m', 'section2y', 'section3y', 'section4y', 'success']
 // const plan = document.querySelectorAll('.plan')
+// We may need to use React... state
 
 // planChoice. can be changed overtime
 let planChoice = ''
